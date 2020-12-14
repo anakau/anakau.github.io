@@ -18,7 +18,6 @@ html {
   font-size: 12px;
 }
 
-
 #aboutproject {
   font-size: 12px;
   text-align: left;
@@ -83,62 +82,11 @@ html {
   display: table;
 }
 
-
-/*#gif01 {
-  margin-top: 0px;
-  width: 150px;
-  height: auto;
-}
-
-#gif02 {
-  margin-top: 0px;
-  width: 150px;
-  height: auto;
-}
-
-#gif03 {
-  margin-top: 0px;
-  height: 150px;
-  width: auto;
-}
-
-#gif04 {
-  margin-top: 0px;
-  height: 150px;
-  width: auto;
-}*/
-
-#thermal {
-  position: relative;
-  top: 420px;
-  font-family: 'Roboto Mono', serif;
-  font-size: 12px;
-}
-
-
-
-
-#im2 {
-  position: absolute;
-  top: 1750px;
-  left: 0px;
-  height: 250px;
-  width: 250px;
-}
-
-#im3  {
-  position: absolute;
-  top: 1750px;
-  left: 0px;
-  height: 250px;
-  width: 250px;
-}
-
 #layout {
   margin-left: 100px;
   margin-right: 200px;
   font-family: 'Roboto Mono', serif;
-  font-size: 15px;
+  font-size: 12px;
 }
 
 #attach img {
