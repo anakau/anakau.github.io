@@ -2,7 +2,7 @@ body {
   height: width/2px;
   width: height/2px;
   background-color: #000000;
-  color: white;
+  color: #90ee90;
 
 }
 html {
@@ -47,6 +47,17 @@ html {
   margin-left: 100px;
   width: 200px;
   height:auto;
+}
+
+.samplecode {
+  width: 500px;
+  height: 600px;
+}
+
+#ogcode{
+  font-size: 12px;
+  font-family: 'Roboto Mono',serif;
+  text-align: left;
 }
 
 #skillscontent{
