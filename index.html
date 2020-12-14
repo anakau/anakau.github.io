@@ -31,26 +31,70 @@ Alt-Outputs 2020<br>
 <p>
 	Learning to use alternative display technology with Ted Davis. <br> I explored an Oscilloscope with the XYScope; a library for <br>Processing to render graphics on a vector display (oscilloscope) <br>by converting them to audio. I really enjoyed the visual quality <br>of the output. It felt like it is of another time. I decided to <br>use these visuals to give life to the works of Carl Sagan. "Pale Blue Dot" <br> is a famous speech by him and it seems quite relevant in <br> the current times. I guess I should have called this piece, "Pale Green Dot."<br>
 <br>
-I used the XYscope Examples to understand how to make the most of the Oscilloscope. <br> Most of my explorations were using primitive shapes to create simple but fun code! <br> The oscilloscope sort of reduces the type to an image and that fascinated me. <br>
+I used the XYscope Examples to understand how to make the most of the Oscilloscope. <br> Most of my explorations were using primitive shapes to create simple but fun code! <br>
 <br>
 	Tools used: <br>
 	Analog Oscilloscope, Processing, Blackhole<br>
 <br>
 	Libraries used:<br>
 	XYscope, minim, Geomerative, Video, OpenCV, ImageSequencePlayer, video-processing<br>
-	
+	<br>
+	Hope you enjoy this visual performance:<br>
+	<br>
 </p>
 </div>
 
 
 <div id="palebluedot">
-<iframe  height="550" width="600" src="https://www.youtube.com/embed/e2tVk0KBM6M" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe  height="500" width="600" src="https://www.youtube.com/embed/e2tVk0KBM6M" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 <div id="heading2">
 	<h2>
 
+<form>
+	<label for ="samplecode"> Here's one OG Code which was the coolest of the lot: </label><br>
+<br>
+<textarea rows = "30" cols="30" style="background-color:#90ee90;">
+	import xyscope.*; 
+XYscope xy; 
 
+// minim is required to generate audio 
+import ddf.minim.*; 
+
+
+void setup () {
+  size(500, 500, P3D);
+  xy = new XYscope(this);
+}
+
+void draw () {
+  background (255);
+
+  xy.clearWaves();
+
+  pushMatrix(); 
+  xy.rectMode(CENTER); 
+  translate(width/2, height/2); 
+  for (int i=1; i<8; i++) {
+    rotateY(radians(frameCount*0.2)); 
+    xy.ellipse(mouseX, 0, i*20, i*20);
+  }
+  popMatrix();
+  
+  xy.buildWaves();
+  xy.drawXY();
+
+}
+
+</textarea>
+
+	<div id="ogcode">
+	<p>What is "OG Code"?<br>
+		Code typed via memory and not through tutorials, examples or the use of libraries.<br> Its a flex.<br>
+	</p>
+</div>
+<br>
 Behind the Scenes</h2>
 </div>
 
@@ -58,29 +102,29 @@ Behind the Scenes</h2>
 		<p>
 	<!-- 	<link href="https://fonts.googleapis.com/css?family=Scope+One" rel="stylesheet"> -->
 			I initially wanted to work with typography and explore how I can  use code to transform <br>words/letters. For this I explored a bunch of different libraries. I further wanted <br> to see how Indic scripts like Gurmukhi and Devanagri would look on such a format. <br> 
-<br>
+		<br>
 Successes:<br>
-			<br>
-			Happy with the discovery and use of so many libraries.<br>
-			Understanding the nature of coding language better.<br>
-			Easily picked up HTML with CSS stlying for this website.<br>
-			Happy with cool visuals of the oscilloscope including a few using completely <br>original code. Say whaaa!<br>
-			<br>
+		<br>
+		Happy with the discovery and use of so many libraries.<br>
+		Understanding the nature of coding language better.<br>
+		Easily picked up HTML with CSS stlying for this website.<br>
+		Happy with cool visuals of the oscilloscope including a few using completely <br>original code. Say whaaa!<br>
+		<br>
 
 			Hurdles:<br>
-			<br>
-			 I couldn't figure out how to  get the right 'matras' in the <br> typesetting as I couldn't see the characters in the text editor. <br>
-			Struggled to create my own code from scratch without relying on examples<br>
-	General incompetency in coding language.<br>
+		<br>
+		I couldn't figure out how to  get the right 'matras' in the <br> typesetting as I couldn't see the characters in the text editor. <br>
+		Struggled to create my own code from scratch without relying on examples<br>
+		General incompetency in coding language.<br>
 	<br>
 	Goals:	<br>
-<br>
+	<br>
 	I realised its much better to work with simple code using shapes, <br>loops, sin, rotate etc as it remains short yet fun. <br>
 	I aim to create smaller (less scary) code to really 'play' with the tool.<br>
 	Sometimes, simple code is all you need.<br>
-		<br>
+	<br>
 	Below are some screen recordings of my processing sketches:<br>
-		</p>
+	</p>
 	</div>
 
 
